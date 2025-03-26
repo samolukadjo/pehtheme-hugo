@@ -36,7 +36,7 @@
           </li>
 
           <li class="before:content-['•'] before:mr-2 before:opacity-50 my-2">
-            {{ .ReadingTime }} min read
+            {{ .ReadingTime }} minuta čitanja
           </li>
 
         </ul>
@@ -85,7 +85,7 @@
 
       <div id="comment" class="border p-8 bg-zinc-100 rounded-2xl">
 
-        <h2 class="text-xl font-semibold">Comment</h2>
+        <h2 class="text-xl font-semibold">Komentari</h2>
 
         <p>Disqus comment here</p>
 
@@ -97,7 +97,7 @@
 
         <img class="w-20 h-20 rounded-full" src="{{ .Site.Author.avatar }}" alt="{{ .Site.Author.name }}">
 
-        <h2 class="text-xl font-bold my-4">Writter by : {{ .Site.Author.name }}</h2>
+        <h2 class="text-xl font-bold my-4">Autor: {{ .Site.Author.name }}</h2>
 
         <p class="mb-4">{{ .Site.Author.bio }}</p>
 
@@ -134,7 +134,7 @@
 
       <div id="related-post" class="">
 
-        <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Recommended for You</h2>
+        <h2 class="text-xl md:text-2xl font-bold mb-6 md:mb-8">Preporučeno za tebe</h2>
 
         {{- $related := .Site.RegularPages.Related . | first 2 -}}
 
